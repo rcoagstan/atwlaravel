@@ -44,3 +44,32 @@ Route::get('/shoping-cart', function () {
 Route::get('/register', function () {
     return view('ecommerce.register');
 });
+
+Route::get('/base', function () {
+    return view('admincs.base');
+});
+
+Route::get('/homeadmin', function () {
+    return view('admincs.homeadmin');
+});
+
+Route::get('/kategori', function () {
+    return view('admincs.kategori');
+});
+
+Route::get('/produk', function () {
+    return view('admincs.produk');
+});
+
+Route::get('/promo', function () {
+    return view('admincs.promo');
+});
+
+Route::get('/registeradmin', function () {
+    return view('admincs.registeradmin');
+});
+
+Route::get('/loginadmin', function () {
+    return view('admincs.loginadmin');
+});
+
