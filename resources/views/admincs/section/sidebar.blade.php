@@ -11,7 +11,7 @@
         <div class="sidebar-brand-icon rotate-n-15">
           <i class="fas fa-laugh-wink"></i>
         </div>
-        <div class="sidebar-brand-text mx-3">Coza Store</div>
+        <div class="sidebar-brand-text mx-3">R-Store</div>
       </a>
 
       <!-- Divider -->
@@ -21,7 +21,7 @@
       <li class="nav-item">
         <a  class="nav-link {{checkRouteActive('homeadmin')}}" href="homeadmin">
           <i class="fas fa-fw fa-home"></i>
-          <span>Dashboard</span></a>
+          <span>Home</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link {{checkRouteActive('produk')}}" href="produk">

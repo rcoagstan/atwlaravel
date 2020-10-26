@@ -67,8 +67,8 @@
 					
 					<!-- Logo desktop -->		
 					<a href="{{ url("/home") }}" class="logo">
-						<img src="images/icons/logo-01.png" alt="IMG-LOGO">
-					</a>
+                        <img src="images/rstore.png" alt="IMG-LOGO">
+                    </a>
 
 					<!-- Menu desktop -->
 					<div class="menu-desktop">

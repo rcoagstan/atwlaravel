@@ -31,6 +31,9 @@
 
         <div class="card o-hidden border-0 shadow-lg my-5">
           <div class="card-body p-0">
+             <a href="{{ url("/home") }}" class="logo">
+                        <img src="images/rstore.png" alt="IMG-LOGO" style="width: 300px" class="center">
+                    </a>
             <!-- Nested Row within Card Body -->
             <div class="row">
               <div></div>

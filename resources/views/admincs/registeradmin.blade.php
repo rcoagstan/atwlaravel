@@ -26,6 +26,9 @@
 
     <div class="card o-hidden border-0 shadow-lg my-5">
       <div class="card-body p-0">
+        <a href="{{ url("/home") }}" class="logo">
+                        <img src="images/rstore.png" alt="IMG-LOGO" style="width: 300px">
+                    </a>
         <!-- Nested Row within Card Body -->
         <div class="row">
           
@@ -65,7 +68,7 @@
                 <a class="small" href="forgot-password.html">Forgot Password?</a>
               </div>
               <div class="text-center">
-                <a class="small" href="login.html">Already have an account? Login!</a>
+                <a class="small" href="loginadmin">Already have an account? Login!</a>
               </div>
             </div>
           </div>

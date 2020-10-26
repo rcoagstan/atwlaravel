@@ -53,6 +53,9 @@
 					 </div>
 					 <div class="menu">
 						  <a class="toggleMenu" href="#"><img src="images/nav.png" alt="" /></a>
+						   <a href="{{ url("/home") }}" class="logo">
+                        <img src="images/rstore.jpg" alt="IMG-LOGO">
+                    </a>
 						    <ul class="nav" id="nav">
 						    	<li class="active-menu">
                                <a href="{{ url("/home") }}" >Home</a> 
