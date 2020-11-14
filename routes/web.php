@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\ProdukController;
 
 /*
 |--------------------------------------------------------------------------
@@ -49,27 +52,11 @@ Route::get('/base', function () {
     return view('admincs.base');
 });
 
-Route::get('/homeadmin', function () {
-    return view('admincs.homeadmin');
-});
+Route::get('homeadmin', [HomeController::class, 'showBeranda']);
+Route::get('kategori', [HomeController::class, 'showKategori']);
+Route::get('loginadmin', [AuthController::class, 'showLogin']);
 
-Route::get('/kategori', function () {
-    return view('admincs.kategori');
-});
 
-Route::get('/produk', function () {
-    return view('admincs.produk');
-});
-
-Route::get('/promo', function () {
-    return view('admincs.promo');
-});
-
-Route::get('/registeradmin', function () {
-    return view('admincs.registeradmin');
-});
-
-Route::get('/loginadmin', function () {
-    return view('admincs.loginadmin');
-});
-
+Route::get('produk', [ProdukController::class, 'index']);
+Route::get('produk/create', [ProdukController::class, 'create']);
+Route::post('produk', [ProdukController::class, 'store']);
