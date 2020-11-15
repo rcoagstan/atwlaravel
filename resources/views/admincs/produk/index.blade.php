@@ -10,9 +10,33 @@
 						Data Produk
 						<a href="produk/create" class="btn btn-dark float-right"><i class="fa fa-plus"></i> Tambah Data</a>
 					</div>
+					<div class="card-body">
+						<table class="table">
+							<thead>
+								<th>No</th>
+								<th>Aksi</th>
+								<th>Nama</th>
+								<th>Harga</th>
+								<th>Stok</th>
+							</thead>
+							<tbody>
+								@foreach($list_produk as $produk)
+								<tr>
+									<td>{{$loop->iteration}}</td>
+									<td>
+										<a href="{{url('produk', $produk->id)}}" class="btn btn-dark" ><i class="fa fa-info"></i></a>
+										<a href="{{url('produk', $produk->id)}}" class="btn btn-warning" ><i class="fa fa-edit"></i></a>
+									</td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								@endforeach
+							</tbody>
+						</table>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-
 @endsection
