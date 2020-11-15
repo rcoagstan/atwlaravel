@@ -58,8 +58,9 @@ Route::get('loginadmin', [AuthController::class, 'showLogin']);
 
 
 Route::get('produk', [ProdukController::class, 'index']);
-Route::get('produk/create', [ProdukController::class, 'create']);
+Route::get('admincs/produk/create', [ProdukController::class, 'create']);
 Route::post('produk', [ProdukController::class, 'store']);
 Route::get('produk/{produk}', [ProdukController::class, 'show']);
 Route::get('produk/{produk}/edit', [ProdukController::class, 'edit']);
 Route::put('produk/{produk}', [ProdukController::class, 'update']);
+Route::delete('produk/{produk}', [ProdukController::class, 'destroy']);
