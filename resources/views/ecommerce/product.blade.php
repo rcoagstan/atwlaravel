@@ -641,11 +641,11 @@
 						<div class="block2-txt flex-w flex-t p-t-14">
 							<div class="block2-txt-child1 flex-col-l ">
 								<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
-									Only Check Trouser
+									UNDER ARMOUR CURRY 7 DUB NATION GS
 								</a>
 
 								<span class="stext-105 cl3">
-									$25.50
+									Rp.742.000
 								</span>
 							</div>
 
@@ -897,11 +897,11 @@
 						<div class="block2-txt flex-w flex-t p-t-14">
 							<div class="block2-txt-child1 flex-col-l ">
 								<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
-									Herschel supply 
+									Lebron Soldier 12 SFG - St. Vincent St. Mary ( SVSM )
 								</a>
 
 								<span class="stext-105 cl3">
-									$63.16
+									Rp.950.000
 								</span>
 							</div>
 
@@ -929,11 +929,11 @@
 						<div class="block2-txt flex-w flex-t p-t-14">
 							<div class="block2-txt-child1 flex-col-l ">
 								<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
-									Herschel supply
+									Nike Kyrie Low 3 Sashiko DA6805-200 Original
 								</a>
 
 								<span class="stext-105 cl3">
-									$63.15
+									Rp2.650.000
 								</span>
 							</div>
 

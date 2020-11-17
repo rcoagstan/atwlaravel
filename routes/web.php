@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ProdukController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -54,7 +55,7 @@ Route::get('/base', function () {
 
 Route::get('homeadmin', [HomeController::class, 'showBeranda']);
 Route::get('kategori', [HomeController::class, 'showKategori']);
-Route::get('loginadmin', [AuthController::class, 'showLogin']);
+
 
 
 Route::get('produk', [ProdukController::class, 'index']);
@@ -64,3 +65,15 @@ Route::get('produk/{produk}', [ProdukController::class, 'show']);
 Route::get('produk/{produk}/edit', [ProdukController::class, 'edit']);
 Route::put('produk/{produk}', [ProdukController::class, 'update']);
 Route::delete('produk/{produk}', [ProdukController::class, 'destroy']);
+
+Route::get('user', [UserController::class, 'index']);
+Route::get('admincs/user/create', [UserController::class, 'create']);
+Route::post('user', [UserController::class, 'store']);
+Route::get('user/{user}', [UserController::class, 'show']);
+Route::get('user/{user}/edit', [UserController::class, 'edit']);
+Route::put('user/{user}', [UserController::class, 'update']);
+Route::delete('user/{user}', [UserController::class, 'destroy']);
+
+Route::get('loginadmin', [AuthController::class, 'showLogin']);
+Route::post('login', [AuthController::class, 'LoginProcess']);
+Route::get('logout', [AuthController::class, 'logout']);

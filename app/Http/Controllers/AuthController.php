@@ -1,20 +1,25 @@
 <?php
 
 namespace App\Http\Controllers;
+use Auth;
 
 class AuthController extends Controller
 {
-
 	function showLogin(){
 		return view('admincs.loginadmin');
 	}
 
-	function processlogin(){
-		
+	function loginProcess(){
+		if(Auth::attempt(['email'=>request('email'),'password'=>request('password')])){
+			return redirect('admincs.homeadmin')->with('success','Login berhasil');
+		}else{
+			return back()->with('danger','Login gagal, Silahkan cek email dan password anda!');
+		}
 	}
 
 	function logout(){
-		
+		Auth::logout();
+		return redirect('login');
 	}
 
 	function registration(){

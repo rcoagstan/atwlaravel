@@ -7,7 +7,7 @@
 			<div class="col-md-12 mt-5">
 				<div class="card">
 					<div class="card-header">
-						Data Produk
+						Edit Data Produk
 					</div>
 					<div class="card-body">
 					<form action="{{url('produk',$produk->id)}}" method="post">

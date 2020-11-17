@@ -34,6 +34,11 @@
           <span>Category</span></a>
       </li>
       <li class="nav-item">
+        <a class="nav-link {{checkRouteActive('user')}}" href="user">
+          <i class="fas fa-fw fa-th"></i>
+          <span>User</span></a>
+      </li>
+      <li class="nav-item">
         <a class="nav-link {{checkRouteActive('promo')}}" href="promo">
           <i class="fas fa-fw fa-th"></i>
           <span>Promo</span></a>

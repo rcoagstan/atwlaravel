@@ -15,7 +15,6 @@ class ProdukController extends Controller {
 	function store(){
 		$produk = new Produk;
 		$produk->nama = request('nama');
-		$produk->stok = request('stok');
 		$produk->harga = request('harga');
 		$produk->berat = request('berat');
 		$produk->stok = request('stok');
@@ -36,9 +35,9 @@ class ProdukController extends Controller {
 	function update(produk $produk){
 		$produk = new Produk;
 		$produk->nama = request('nama');
-		$produk->stok = request('stok');
 		$produk->harga = request('harga');
 		$produk->berat = request('berat');
+		$produk->stok = request('stok');
 		$produk->deskripsi = request('deskripsi');
 		$produk->save();
 
