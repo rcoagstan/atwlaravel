@@ -5,10 +5,43 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 mt-5">
+				<div class="card"> 
+					<div class="card-header">
+						Filter
+					</div>
+					<div class="card-body">
+						<form action="{{url('produk/filter')}}" method="post">
+							@csrf
+							<div class="form-group">
+							<label for="" class="control-label">Nama</label>
+							<input type="text" name="nama" class="form-control" value="{{$nama ?? ""}}">
+						</div>
+						<div class="form-group">
+							<label for="" class="control-label">Stock</label>
+							<input type="text" name="stock" class="form-control" value="{{$stok ?? ""}}">
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="" class="control-label">Harga Min</label>
+									<input type="text" name="harga_min" class="form-control" value="{{$harga_min ?? ""}}">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="" class="control-label">Harga Max</label>
+									<input type="text" name="harga_max" class="form-control" value="{{$harga_max ?? ""}}">
+								</div>
+							</div>
+						</div>
+							<button class="btn btn-dark float-left"><i class="fa fa-search">&nbspFilter</button></i></button>
+						</form>
+					</div>
+				</div><br><br>
 				<div class="card">
 					<div class="card-header">
 						Data Produk
-						<a href="admincs/produk/create" class="btn btn-dark float-right"><i class="fa fa-plus"></i> Tambah Data</a>
+						<a href="{{url('admincs/produk/create')}}" class="btn btn-dark float-right"><i class="fa fa-plus"></i> Tambah Data</a>
 					</div>
 					<div class="card-body">
 						<table class="table">

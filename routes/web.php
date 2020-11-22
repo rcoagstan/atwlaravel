@@ -59,12 +59,13 @@ Route::get('kategori', [HomeController::class, 'showKategori']);
 
 
 Route::get('produk', [ProdukController::class, 'index']);
-Route::get('admincs/produk/create', [ProdukController::class, 'create']);
+Route::get('admincs/{produk}/create', [ProdukController::class, 'create']);
 Route::post('produk', [ProdukController::class, 'store']);
 Route::get('produk/{produk}', [ProdukController::class, 'show']);
 Route::get('produk/{produk}/edit', [ProdukController::class, 'edit']);
 Route::put('produk/{produk}', [ProdukController::class, 'update']);
 Route::delete('produk/{produk}', [ProdukController::class, 'destroy']);
+Route::post('produk/filter', [ProdukController::class, 'filter']);
 
 Route::get('user', [UserController::class, 'index']);
 Route::get('admincs/user/create', [UserController::class, 'create']);
