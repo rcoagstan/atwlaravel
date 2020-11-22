@@ -24,6 +24,12 @@
 							<label for="" class="control-label">Nama</label>
 							<input type="text" class="form-control" name="nama"></input>
 						</div>
+						<div class="col-md-3">
+								<div class="form-group" >
+									<label for="" class="control-label">No HP</label>
+									<input type="text" class="form-control" name="no_hp" value="{{$user->no_hp}}"></input>
+								</div>
+							</div>
 						<div class="form-group" >
 							<label for="" class="control-label">Password</label>
 							<input type="password" class="form-control" name="password"></input>

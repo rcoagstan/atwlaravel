@@ -16,6 +16,9 @@
 						{{"Username :".$user->username}}
 						| Email : {{$user->email}}
 					</p>
+					<p>
+						 No Hp : {{$user->no_hp}}
+					</p>
 					</div>
 				</div>
 			</div>

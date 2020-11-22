@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\User;
+use App\UserDetail;
 
 class UserController extends Controller {
 	function index(){
@@ -19,6 +20,11 @@ class UserController extends Controller {
 		$user->nama = request('nama');
 		$user->password = bcrypt(request('password'));
 		$user->save();
+
+		$userDetail = new UserDetail;
+		$userDetail->id_user = $user->id;
+		$userDetail->no_hp = request('no_hp');
+		$userDetail->save();		
 
 		return redirect('user')->with('success', 'Data berhasil ditambah');
 
