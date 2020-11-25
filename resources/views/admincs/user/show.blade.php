@@ -17,7 +17,7 @@
 						| Email : {{$user->email}}
 					</p>
 					<p>
-						 No Hp : {{$user->no_hp}}
+						 No Hp : {{$user->detail->no_hp}}
 					</p>
 					</div>
 				</div>
